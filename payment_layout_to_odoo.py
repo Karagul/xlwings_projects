@@ -31,4 +31,16 @@ xw.Range('A1').value = 'MONTO REPORTE ORIGINAL'
 xw.Range('B1').value = original_ammount
 
 
+def create_payments_template():
 
+    template_sheet = xw.sheets.add()
+    template_sheet.name = 'TEMPLATE DE CARGA'
+
+    xw.Range('A1').value = 'payment_type'
+    xw.Range('B1').value = 'partner_type'
+    xw.Range('C1').value = 'partner_id/id'
+    xw.Range('D1').value = 'amount'
+    xw.Range('E1').value = 'journal_id/id'
+    xw.Range('F1').value = 'payment_date'
+    xw.Range('G1').value = 'communication'
+    xw.Range('H1').value = 'payment_method_id/id'
