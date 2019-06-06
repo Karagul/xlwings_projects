@@ -1,10 +1,9 @@
 import xlwings as xw
 
 #Creation of new workbook
-#wb = xw.Book()
+#wb = xl.Book()
 
-xw.Range('A1').value = 'something'
+print(xw.Range('B1').number_format)
 
 ws1 = xw.sheets[0]
 
-print(ws1.name)
